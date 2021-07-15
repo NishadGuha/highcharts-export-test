@@ -72,10 +72,11 @@ function exportImage() {
   }
 }
 
+// <Button id="downloadButton" onClick={exportImage}>Download</Button>
+
 function App() {
   return (
     <div className="App">
-      <Button id="downloadButton" onClick={exportImage}>Download</Button>
       <div id="container">
         <HighchartsReact highcharts={Highcharts} options={options} />
       </div>
