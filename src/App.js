@@ -12,7 +12,7 @@ var datetime = currentdate.getDate() + "/"
               + (currentdate.getMonth()+1)  + "/" 
               + currentdate.getFullYear() + " @ "  
               + currentdate.getHours() + ":"  
-              + currentdate.getMinutes();
+              + (currentdate.getMinutes()<10?'0':'') + currentdate.getMinutes();
 
 const options = {
   exporting: {
